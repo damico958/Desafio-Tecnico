@@ -1,0 +1,83 @@
+{
+  "properties": [
+    {
+      "name": "input.directory.path",
+      "type": "java.lang.String",
+      "description": "Description for input.directory.path."
+    },
+    {
+      "name": "output.directory.path",
+      "type": "java.lang.String",
+      "description": "Description for output.directory.path."
+    },
+    {
+      "name": "input.file.path.testing",
+      "type": "java.lang.String",
+      "description": "Description for input.file.path.testing."
+    },
+    {
+      "name": "file.extension",
+      "type": "java.lang.String",
+      "description": "Description for file.extension."
+    },
+    {
+      "name": "salesman.identifier",
+      "type": "java.lang.String",
+      "description": "Description for salesman.identifier."
+    },
+    {
+      "name": "simplified.salesman.identifier",
+      "type": "java.lang.String",
+      "description": "Description for simplified.salesman.identifier."
+    },
+    {
+      "name": "customer.identifier",
+      "type": "java.lang.String",
+      "description": "Description for customer.identifier."
+    },
+    {
+      "name": "simplified.customer.identifier",
+      "type": "java.lang.String",
+      "description": "Description for simplified.customer.identifier."
+    },
+    {
+      "name": "sale.identifier",
+      "type": "java.lang.String",
+      "description": "Description for sale.identifier."
+    },
+    {
+      "name": "simplified.sale.identifier",
+      "type": "java.lang.String",
+      "description": "Description for simplified.sale.identifier."
+    },
+    {
+      "name": "general.field.delimiter",
+      "type": "java.lang.String",
+      "description": "Description for general.field.delimiter."
+    },
+    {
+      "name": "starting.array.delimiter",
+      "type": "java.lang.String",
+      "description": "Description for starting.array.delimiter."
+    },
+    {
+      "name": "ending.array.delimiter",
+      "type": "java.lang.String",
+      "description": "Description for ending.array.delimiter."
+    },
+    {
+      "name": "new.item.delimiter",
+      "type": "java.lang.String",
+      "description": "Description for new.item.delimiter."
+    },
+    {
+      "name": "new.item.field.delimiter",
+      "type": "java.lang.String",
+      "description": "Description for new.item.field.delimiter."
+    },
+    {
+      "name": "big.decimal.scale",
+      "type": "java.lang.String",
+      "description": "Description for big.decimal.scale."
+    }
+  ] }

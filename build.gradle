@@ -1,0 +1,36 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'org.desafio-tecnico'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    gsonVersion = '2.8.9'
+    springVersion = '2.6.3'
+    guavaVersion = '31.0.1-jre'
+    validatorsVersion = '2.1.5'
+}
+
+dependencies {
+    implementation "com.google.guava:guava:${guavaVersion}"
+
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+
+    implementation "br.com.caelum.stella:caelum-stella-core:${validatorsVersion}"
+
+    implementation "org.springframework.boot:spring-boot-starter:${springVersion}"
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor:${springVersion}"
+
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${springVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -53,6 +53,7 @@ Assegure-se de seguir corretamente os passos indicados nos links abaixo. Todos o
 * Foram utilizados validadores de `CPF` e `CNPJ` através de dependências externas e mais confiáveis para que a tecnicalidade da validação fosse abstraída do projeto. 
 * Não é permitida a inclusão de dados com campos que deveriam ser únicos de suas categorias, como `CPF (Vendedor)`, `CNPJ (Cliente)`, `ID com preço (Item)` e `ID (Venda)` e que já foram previamente cadastrados. 
 * Todos os delimitadores recomendados pela especificação foram acatados pela implementação. Além disso, todos eles foram inseridos no arquivo de configuração *`application.properties`* para que seja fácil alterar os formatos em possíveis casos futuros. 
+* Esse mesmo arquivo de configuração também permite a alteração dos diretórios de entrada e de saída, caso seja uma vontade do usuário, além de qual formato de arquivo será interpretado. 
 * Entretanto, há uma impossibilidade atual do sistema em interpretar *`Strings`* que possuam de maneira genuína o uso do caractere `ç` nos campos de `name` e `business area`. Isto acontece graças ao delimitador `ç` recomendado.
 * A sugestão de implementação seria a alteração do delimitador `ç` para o mesmo caractere no formato `UPPERCASE`. Ou seja, o caractere  `Ç`. Tendo em vista que o caractere original recomendado aparentemente já não seria um problema para uso em língua americana, essa mudança já conseguiria corrigir o mau uso também na língua portuguesa. Afinal, seria muito difícil que algum campo genuíno precisasse desse caractere nesse formato.
 * Para a implementação atual, recomenda-se que os campos que necessitem genuinamente do caractere `ç` sejam escritos com o caractere `c` em seu lugar, mesmo não sendo o mais ideal.
@@ -81,4 +82,14 @@ Um arquivo de entrada *`testing.dat`*, com os seguintes campos, teria o seguinte
 <a href="https://ibb.co/4tQfRfg"><img src="https://i.ibb.co/bmf353R/Output-Picture.jpg" alt="Output-Picture" border="0"></a>
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/NY0yTGk/Output-Picture-2.jpg" alt="Output-Picture-2" border="0"></a>
+
+Abaixo também encontra-se uma imagem que exemplifica como o arquivo `.json` armazena as `Hashes` dos arquivos, as quais serão posteriormente recuperadas pelo sistema apenas na inicialização e gerenciadas devidamente. 
+
+<a href="https://ibb.co/jbSXLrf"><img src="https://i.ibb.co/7jqmG1C/Hashes.jpg" alt="Hashes" border="0"></a>
+
+Por fim, abaixo encontra-se a configuração do arquivo *`application.properties`* e seus campos que facilitam as mudanças nos formatos do sistema e outras propriedades mais gerais. 
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/p2Mc56m/application-properties.jpg" alt="application-properties" border="0"></a>
+
+
 

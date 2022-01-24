@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CommandLineRunner implements org.springframework.boot.CommandLineRunner {
-    @Value("${input.file.path.testing}")
-    private String DAT_INPUT_FILE_PATH;
-
     @Value("${input.directory.path}")
     private String INPUT_DIRECTORY_PATH;
 
